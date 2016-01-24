@@ -14,7 +14,7 @@ Below is a example of usage.
 
 ```javascript
 var express = require('express');
-var request = require('request');
+var ajax = require('request-ajax');
 var ajaxCacheHeader = require('express-request-ajax-cache-header');
 
 var app = express();
