@@ -84,6 +84,26 @@ app.get('/concurrent', function(req, res, next){
   });
 });
 
+app.get('/empty_download', function(req, res, next){
+  var render = _.after(2, function(){
+  });
+  ajax({
+    url: 'http://localhost:1235/cached_data',
+    accessToken: true,
+    error: res.locals.apiError,
+    complete: res.locals.setCacheByAPI,
+    success: render
+  });
+  ajax({
+    url: 'http://localhost:1235/more_cached_data',
+    accessToken: true,
+    error: res.locals.apiError,
+    complete: res.locals.setCacheByAPI,
+    success: render
+  });
+  res.send('empty_download');
+});
+
 
 
 app.use(function(err, req, res, next) {

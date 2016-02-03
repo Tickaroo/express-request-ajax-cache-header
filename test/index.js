@@ -51,7 +51,16 @@ describe('express-request-ajax-cache-header', function() {
 
   it('should set cacheControl only once', function(done) {
     return request.get('http://localhost:1234/concurrent').end(function(err, res){
-      expect(res.headers['cache-control']).to.equal('public, max-age=31557600');
+      expect(res.headers['cache-control']).to.contain('public, max-age=');
+      done();
+    });
+  });
+
+
+  it('should set not set cacheControl for headersSent', function(done) {
+    return request.get('http://localhost:1234/empty_download').end(function(err, res){
+      expect(res.text).to.equal('empty_download');
+      expect(res.headers['cache-control']).to.equal(undefined);
       done();
     });
   });
