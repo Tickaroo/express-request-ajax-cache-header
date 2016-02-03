@@ -1,4 +1,6 @@
-# express-request-ajax-cache-header [![npm version](https://badge.fury.io/js/express-request-ajax-cache-header.svg)](https://www.npmjs.com/package/express-request-ajax-cache-header) [![Build Status](https://travis-ci.org/Tickaroo/express-request-ajax-cache-header.svg?branch=master)](https://travis-ci.org/Tickaroo/express-request-ajax-cache-header)
+# express-request-ajax-cache-header
+[![npm version](https://badge.fury.io/js/express-request-ajax-cache-header.svg)](https://www.npmjs.com/package/express-request-ajax-cache-header) [![Build Status](https://travis-ci.org/Tickaroo/express-request-ajax-cache-header.svg?branch=master)](https://travis-ci.org/Tickaroo/express-request-ajax-cache-header) [![codecov.io](https://codecov.io/github/Tickaroo/express-request-ajax-cache-header/coverage.svg?branch=master)](https://codecov.io/github/Tickaroo/express-request-ajax-cache-header?branch=master)
+
 
 request-ajax handler to proxy API's cache-control header
 
