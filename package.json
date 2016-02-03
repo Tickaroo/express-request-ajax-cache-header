@@ -1,6 +1,6 @@
 {
   "name": "express-request-ajax-cache-header",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "request-ajax handler to proxy API's cache-control header",
   "main": "index.js",
   "directories": {
